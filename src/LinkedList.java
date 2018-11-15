@@ -13,5 +13,11 @@ public class LinkedList {
 		Node newNode = new Node(data,null);
 		head.setNext(newNode);
 	}
+	public Node remove()
+	{
+		Node n = head;
+		head = head.getNext();
+		return n;
+	}
 
 }
